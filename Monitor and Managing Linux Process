@@ -1,4 +1,25 @@
 //starting to ending is called the process
 
-//common things in process:
+//common things in process: resources
+
+//  Type TOP -command in the system terminal
+
+PID - Process ID
+USER - Who has initated the process
+
+PR- priority 
+NI- Nice value
+
+VIRT-virtual memory size of the process (Demanded size but the process)
+RES-resident size ( current memory used by the process)
+SHR-Unshared memory
+S-state
+
+State: state of the process
+S- Stop
+R-Running
+S-Sleep
+Zombie Process _ Parent got killed , but still the process is running. Beacuse the commands are matching with the parent, but not with the child process.
+
+
 
