@@ -1,0 +1,27 @@
+load avg : cpu
+
+uptime - load avg
+w-- watch the load avgs
+top-- gives the load avgs also
+
+load average : 0.21, 0.14, 0.14
+               last 15 mins,last 5min,last 1 min
+
+
+
+lscpu-- per cpu load avg
+
+Number of CPUD's : 4
+
+div load with 4 , you will be getting load avg per cpu.
+
+ps--cureent shell
+ps aux | less --
+ps -ef -- can check the UID and PPID
+pstree --- provides the first command which has run on the machine
+
+
+
+                
+ 
+ 
