@@ -1,0 +1,28 @@
+we have 64 types to kill a process
+
+We mainly use -9 = sigkill
+              -15 = sigterm 
+              
+syntax: kill -15 pid
+
+kill -15 : in this when the kernal sends you the order to kill a process , the process would consult the child process and then terminate those Cchild process).
+In this case the child process may disobey/ignore the kill command.
+After the process is completed by the child user which has not been killed , would try to realse and reach out the parent process , but the parent process has been 
+already killed.
+so that paticluar child process would become a ZOMBIE process.
+
+
+Kill -9: SIGKILL: there would not seking any permission , it would forcefully kill the process.
+
+ps -- gives all the process which are running.
+jobs-- provides the list of all the jobs
+Kill -l : provides the list of all the kills present in the rehel
+bg-- background
+fg-- foreground
+pkill -uid
+man pkill -- provides manual of pkill
+
+
+
+kill -15 PID
+
