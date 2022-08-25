@@ -1,0 +1,41 @@
+DAEMONS: System background i.e. one kind of backend services
+
+will be running and untill we stop it manually.
+
+systemd : daemon manager
+systemctl : manage all the services in the system.
+
+Three parameters
+
+.service -- freq running services
+.socket -- at the time of boot it wont start, delay service (clients requirement) 
+.path  --  delay activation 
+
+
+systemctl list-units (will be getting lot of services)
+
+systemctl list-units --type=service (all the .services)
+
+systemctl list-unit-files --type=service (list enabled/disabled services)
+
+systemctl status httpd ( know the status of httpd)
+
+systemctl stop httpd ( to stop)
+
+systemctl disabled httpd (to disable)
+
+systemtl start httpd
+
+systemctl enabled httpd 
+
+start - the service has been started
+enabled - auto start after boot, the service will start automatically
+
+
+systemctl reload httpd --
+systemctl restart httpd --
+
+
+
+
+
