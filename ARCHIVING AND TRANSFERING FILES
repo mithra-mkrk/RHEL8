@@ -1,0 +1,42 @@
+//ALL ABOUT .TAR
+
+Archive and copy files from one system to another
+
+
+Tar - to make a compressed file
+
+-c create
+-t list
+-x extract
+
+
+-z --gzip
+-j --bzip2
+-J --xz
+
+// used to create a compresed file in /root with file name mytecbackup.tar.bz2  of the /etc file
+
+tar -cvjf  /root/myetcbackup.tar.bz2 /etc
+
+
+c- create
+v-verbose
+j-extension
+f-filename
+
+
+du -sh /etc  // shows tthe size of the file
+
+
+du -- display usauge
+sh -- show , human readbale 
+/etc - file name
+
+
+tar -tf /root/myetcbackup.tar.bz2      // to list the file name
+
+tar -xf /root/myetcbackup.tar.bz2     //to extract the file into a required directory 
+
+
+
+
