@@ -1,0 +1,61 @@
+4 layers TCP/IP
+
+Application layer : Each app has specifcations for communications so that client and servers may communicate across platforms(CAR)
+Transport layer   : Transport protocls are TCP and UDP. TCP is reliable connection oriented communication, while UDP is a connectionless datagram protocol(CAR NO)
+Internet layer    : carries data from source host to destination host(petrol)
+Link Layer        : link or media access layer provides connection to physical media, wired ethernet and wirless WLAN
+
+
+Interface Names
+
+
+ip link show -- will show the interface 
+nmcli connection show 
+
+nmcli connection add con-name public -type ethernet ifname ens160 ipv4.method
+
+
+nmcli connection add con-name public -type ethernet ifname ens160 ipv4.method manual ipv4.addresses  192.168.217.128/24 ipv4.gateway 192.168.217.1 ipv4.dns 8.8.8.8 connection.autoconnect yes
+
+nmcli connection show
+
+
+ifconfig -- for ip address
+
+
+route -n   -- for gateway
+
+cat /etc/resolv.conf    -- for DNS
+
+nmcli device show 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
