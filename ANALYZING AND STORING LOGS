@@ -12,6 +12,68 @@ LOGS:logs architecure
 
 
 
+to change the log file location 
+
+vim /etc/rsyslog.conf  ---- //conf file to edit the file location
+
+    /var/log/secure   ---- //can remane to file a location where ever you need
+    
+    
+After changing the log location need to restart the systemctl 
+
+
+systemctl restart rsyslog.service
+
+// now all the logs are dumped into a new file location.
+
+
+journalctl         // all the logs can be viewd
+
+journalctl --since today  //all today logs
+
+journalctl -n 5   // lat 5  logs updated
+
+journalctl -p err  //shows all the errors
+
+journalctl --since 1hr
+
+journalctl --since "2022-07-30 20:30:00" --until "2022-07-31 12:00:00"
+
+NTP:Network time protcol
+
+vim /etc/chrony.conf
+
+systemctl enable -- now chronyd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
