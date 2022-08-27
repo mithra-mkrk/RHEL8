@@ -38,5 +38,77 @@ tar -tf /root/myetcbackup.tar.bz2      // to list the file name
 tar -xf /root/myetcbackup.tar.bz2     //to extract the file into a required directory 
 
 
+// Transferring to another machine
+
+scp /etc/yum.conf root@node1:/root  //transfering the file from one machine(controller) to node1
+
+scp root@node1:/etc/hosts /root    // transfering the file from node1 to controller1
+
+sftp - secure file transfer program
+
+
+sftp amit@node1
+pwd
+mkdir hstbackup
+cd hostbackup
+
+
+
+//Transfering file from controller to node1
+
+put /etc/hosts  ( this will be putting the file taking from controller (/etc/hosts) into /home/amit/hostbackup/hosts)
+
+//want to get file frm node1 to controller
+
+get /etc/yum.conf  (the file will be visiblein root directory in controller)
+
+
+rsync (sync btw file)  // wouldn't copy lookalike files
+
+
+mkdir serverlogs
+
+rsync -av root@node1:/var/log serverlogs
+
+a -- archive
+v -- verbose
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
