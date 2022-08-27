@@ -1,0 +1,17 @@
+LOGS:logs architecure 
+
+/var/log/messages -- most syslogs are logged here
+
+/var/log/secure -- syslog mssgs related to secuirty and auth events
+
+/var/logmaillog -- syslog messages related to mail server
+
+/var/log/cron -- syslog messages related to scheduled job execution
+
+/var/log/boot.log -- non-syslog console messages related to system startup
+
+
+
+
+
+
