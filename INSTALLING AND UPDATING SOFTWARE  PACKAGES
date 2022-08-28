@@ -1,0 +1,137 @@
+//manage software packages from redhat and YUM packages
+
+
+what is a repo?
+
+rpm --redhat package management 
+
+ lsblk -- list block device
+ 
+ vim /etc/yum.repos.d/local.repo  //create a file to create a repo file locally
+ 
+ 
+ [BaseID]
+ name=BaseOS
+ baseurl=file:///run/media/root/RHEL-8-6-0-BaseOS-x86_64/BaseOS       // this the location of the iso image // check the names and caps
+ gpgcheck=0
+ enabled=1
+ 
+ [AppID]
+ name=Apps
+ baseurl=file:///run/media/root/RHEL-8-6-0-BaseOS-x86_64/AppStream     
+ gpgcheck=0
+ enabled=1
+ 
+ 
+ 
+ yum repolist
+ 
+ yum install httpd  //intsallation of apache webserver
+ 
+ rpmquery httpd   //provides architecture of hhtpd
+ 
+ yum remove -y httpd //unistall apache
+ 
+ 
+ 
+ //group packages
+ 
+ yum group list
+ 
+ yum group info "RPM Development tools"
+ 
+ yum group install "RPM Development tools"
+ 
+  
+ 
+ tail -5 /var/log/dnf.rpm.log   //shows last 45 logs ofrpm
+ 
+ yum history                    // shows yum history
+ 
+ yum historu undo 5             // shows all the undo packages of YUM , which are not installed 
+ 
+ downloading external packages
+  go >>chrme>> epel >> select rhel8 >> get dnf link past and run in controller
+  
+  
+ enable/disable repos
+ 
+ cd /etc/yum.repos.d
+ 
+ go to paticular repo which you wann enabled change to "1" from "0"
+ 
+ then 
+ 
+ check 
+ 
+ yum repolist all  // will find all the repos which are enabled or disabled
+ 
+ 
+ YUM server
+ 
+ in this server we keep all the packages
+ 
+ create a repo locally on each machine
+ 
+ inthe baseurl we need to give the location of the yum server
+ 
+ how to make yum server
+ 
+ yum install httpd
+ 
+ cd /var/www/html
+ 
+ create a html page withe index.html
+ 
+ cat index.html
+ 
+ systemctl enable --now httpd
+ 
+ firewall-cmd --permanent --add-service=http
+ firewall-cmd --reload
+ 
+ curl http://controller
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
