@@ -1,0 +1,15 @@
+Locate and find the file 
+
+
+locate messages
+
+
+locate -i messages  //all cap's where messages
+
+find /etc -name fstab     //you will give the location where to find and name of the file you are searching in 
+
+find /home -user user1
+
+
+
+
