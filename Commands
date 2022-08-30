@@ -1,0 +1,17 @@
+head // provides all the top commands
+tail // all the below commands
+
+tail -n 3 /etc/passswd //n specifies number of lines
+
+
+wc  // counts lines, words and characters
+
+wc -l new line counts
+wc -w words count
+wc -c bytes per count
+
+Tab Completion: if we forget any command press twice for more options, tab once to auto fill .
+
+
+
+
