@@ -10,6 +10,28 @@ find /etc -name fstab     //you will give the location where to find and name of
 
 find /home -user user1
 
+find /etc -type f    // finds all the files
+
+find /etc -type d    // finds all the directories
+
+find / -size -10M   // in whole of the system find the files which are less than 10MB
+
+find / -size +10M   // over 10 mB in whole ofthe system
+
+find / -size 10M   // which is equal to 10M
+
+find /roor -perm 777  // finds  which have 777 permissions
+
+find / -mmin -120  /// will give the file last edited in 120 mins
+
+rpmquery cockpit
+
+systemctl start cockpit
+
+
+
+
+
 
 
 
