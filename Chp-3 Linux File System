@@ -40,6 +40,58 @@ deleted automatically.
 /dev Contains special device files that are used by the system to access hardware.
 
 
+*********************************************************************************************************************************************************************
+
+ls -l //long list format
+ls -a //all files, inc hidden
+la -R // recursive , to inculde the contents of all subdirectories.
+
+
+mkdir -- make my directory
+mkdir -p // creates multiple home directory and sub directory
+
+cp file new-file // copy command
+
+cp -r directory new-directory // copy directory and contents
+
+
+mv file new-file //move or rename
+
+rm file  //remove file
+
+rm -r  //remove directory
+
+rmdir  // remove empty directory
+
+
+df // list all the directories that are on the diff file system
+
+Hardlink :: if the created link or orginal link is deleted stil we dont loose the data
+
+
+ln is used to create hardlink
+
+ln newfile1.txt /tmp/newfile1.txt
+
+ls -il newfile.txt /tmp/newfile1.txt
+
+provides inode number i -- inode which is same for the both the files which are having same hardlink
+
+
+Softlink: when the orginal file is deleted the softlink doesnt work, its called dangling link , the second link will be present but wont work.
+
+ln -s filelocation1 filelocation2
+
+they have two diff inodes
+
+
+
+
+
+
+
+
+
 
 
 
